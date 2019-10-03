@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#000000"
+    >
+
+    <!-- START of column of numbers-->
+    <LinearLayout
+        android:id="@+id/numericalCol"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="3px"
+        android:orientation="vertical">
+        <!-- This is where the TextViews will be added-->
+    </LinearLayout>
+    <!-- END of column of numbers-->
+
+    <!-- START for 2-11 ROOT row-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#000000"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Rules void hello1(int hour)"
+            android:textColor="#ffffff"
+            />
+
+        <!-- START OF 2-3 row-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="properties"
+                android:textColor="#000000"
+                android:background="#ffffff"
+                android:padding="27px"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:rowCount="2"
+                android:columnCount="2"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:text="         name"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginRight="100px"
+                    />
+                <TextView
+                    android:layout_column="0"
+                    android:layout_row="1"
+                    android:text="      category"
+                    android:layout_marginLeft="100px"
+                    android:layout_marginRight="100px"
+                    />
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="0"
+                    android:text="           Day Hour Classification"
+                    />
+                <TextView
+                    android:layout_column="1"
+                    android:layout_row="1"
+                    android:text="           Day and Time"
+                    />
+            </GridLayout>
+        </LinearLayout>
+        <!-- END OF 2-3 row-->
+
+        <!-- START for 4-5 row (ROOT for row 4-5)-->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="2"
+            android:columnCount="3"
+            android:orientation="horizontal"
+            android:background="#00FFFF">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:paddingLeft="76px"
+                android:paddingRight="76px"
+                android:textStyle="bold"
+                android:text="Rule"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:paddingLeft="150px"
+                android:paddingRight="150px"
+                android:textStyle="bold"
+                android:text="      C1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:paddingLeft="125px"
+                android:paddingRight="125px"
+                android:textStyle="bold"
+                android:text="      A1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text=" "
+                />
+
+            <!-- Create in java -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row5C1String"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="min &lt;= hour &amp;&amp; hour &lt;= max"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/row5A1String"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:paddingLeft="10px"
+                android:scrollHorizontally="true"
+                android:text="System.out.println(greeting + &quot;, World!&quot;"
+                />
+
+        </GridLayout>
+        <!-- END for 4-5 row (ROOT for row 4-5)-->
+
+        <!-- START for row 6-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff"
+            android:id="@+id/row6linearLayout">
+
+        </LinearLayout>
+        <!-- END for row 6-->
+
+        <!-- START for row 7-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#ffffff"
+                android:layout_weight=".5"
+                android:text="Rule"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#fff34f"
+                android:layout_weight=".25"
+                android:text="From"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#fff34f"
+                android:layout_weight=".25"
+                android:text="To"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:background="#ff9933"
+                android:layout_weight=".65"
+                android:text="Greeting"/>
+        </LinearLayout>
+        <!-- END for row 7-->
+
+        <!-- START for row 8 - 11 ROOT for these rows-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#ffffff">
+
+            <!--Rule-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".45"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="R10"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="R20"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="R30"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    android:text="R40"/>
+            </LinearLayout>
+
+            <!--From-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".26"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="0"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="12"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="18"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="22"/>
+            </LinearLayout>
+
+            <!--To-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".26"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="11"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="17"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="21"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="viewEnd"
+                    android:background="#fff34f"
+                    android:text="23"/>
+            </LinearLayout>
+
+            <!--Greeting-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight=".32"
+                android:background="#ffffff">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff9933"
+                    android:text="Good Morning"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff9933"
+                    android:text="Good Afternoon"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff9933"
+                    android:text="Good Evening"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ff9933"
+                    android:text="Good Night"/>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- END for row 8-11-->
+
+    </LinearLayout>
+    <!-- END for 2-11 ROOT row-->
+
+</LinearLayout>
