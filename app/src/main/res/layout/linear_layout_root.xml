@@ -1,35 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:orientation="horizontal"
+    android:background="#000000"
     >
-    <TableLayout
+
+    <!-- START of column of numbers-->
+    <LinearLayout
+        android:id="@+id/numericalCol"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingTop="3px"
+        android:orientation="vertical">
+        <!-- This is where the TextViews will be added-->
+    </LinearLayout>
+    <!-- END of column of numbers-->
+
+    <!-- START OF SCROLL-->
+    <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TableRow
+        android:layout_height="match_parent"
+
+        >
+        <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <LinearLayout
+            <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal"
-                android:background="#000000"
-                >
-
-                <!-- START of column of numbers-->
-                <LinearLayout
-                    android:id="@+id/numericalCol"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:paddingTop="3px"
-                    android:orientation="vertical">
-                    <!-- This is where the TextViews will be added-->
-                </LinearLayout>
-                <!-- END of column of numbers-->
-
-                <!-- START OF SCROLL-->
+                android:layout_height="wrap_content">
 
                 <!-- START for 2-11 ROOT row-->
                 <LinearLayout
@@ -358,7 +360,10 @@
                 </LinearLayout>
                 <!-- END for 2-11 ROOT row-->
 
-            </LinearLayout>
-        </TableRow>
-    </TableLayout>
-</HorizontalScrollView>
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+
+
+</LinearLayout>
